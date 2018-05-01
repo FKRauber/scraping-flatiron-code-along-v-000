@@ -30,7 +30,7 @@ class Scraper
       #end
     end
     def get_courses   # instance method will be responsible for using a CSS selector to grab all of the HTML elements that contain a course.
-
+      self.get_page.css(".post")
     end
     def make_courses  # method will be responsible for actually instantiating Course objects and giving each course object the correct title, schedule and description attribute that we scraped from the page
 
